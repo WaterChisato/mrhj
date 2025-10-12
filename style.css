@@ -1,0 +1,56 @@
+/* 🌈 导入你自己的字体 */
+@font-face {
+  font-family: 'MyFont';                /* 自定义字体名称 */
+  src: url('fonts/myfont.ttf') format('truetype'); /* 字体文件路径 */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 🧭 设置全局样式 */
+:root {
+  --main-font: 'MyFont', sans-serif;   /* 使用你上传的字体 */
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: var(--main-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+}
+
+/* 半透明遮罩层 */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 80%;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
