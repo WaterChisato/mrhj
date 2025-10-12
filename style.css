@@ -1,7 +1,7 @@
 /* 🌈 导入你自己的字体 */
 @font-face {
   font-family: 'MyFont';                /* 自定义字体名称 */
-  src: url('fonts/myfont.ttf') format('truetype'); /* 字体文件路径 */
+  src: url('fonts/MyFont.ttf') format('truetype'); /* 字体文件路径 */
   font-weight: normal;
   font-style: normal;
 }
