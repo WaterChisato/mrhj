@@ -1,4 +1,4 @@
-// ✨ 每日一句名言库
+// 要加就按照 { text: "名句", author: "名句作者" }, 来写，不如绝对报错
 const quotes = [
   { text: "学而不思则罔，思而不学则殆。", author: "孔子" },
   { text: "己所不欲，勿施于人。", author: "孔子" },
@@ -10,6 +10,7 @@ const quotes = [
   { text: "采菊东篱下，悠然见南山。", author: "陶渊明" },
   { text: "天行健，君子以自强不息。", author: "《周易》" },
   { text: "欲穷千里目，更上一层楼。", author: "王之涣" },
+  { text: "朋友还是敌人？选吧", author: "凯文" },
   { text: "不畏浮云遮望眼，自缘身在最高层。", author: "王安石" },
   { text: "横眉冷对千夫指，俯首甘为孺子牛。", author: "鲁迅" },
   { text: "希望是附丽在存在上的，有存在，便有希望，有希望，便是光明。", author: "鲁迅" },
@@ -90,16 +91,15 @@ const quotes = [
 ];
 
 
-// 🖼️ 固定背景图，只用一张图片（放在 images 文件夹）
+// 要改背景就放在images文件夹，文件名称就是下面的图片“bg1.jpg”
 const backgroundImage = "images/bg1.jpg";
-
-// 📅 随机名言 + 固定背景
+// 固定背景和随机名言，不用管
 function showQuoteAndBackground() {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   
   document.getElementById("quote").textContent = randomQuote.text;
   document.getElementById("author").textContent = `—— ${randomQuote.author}`;
-  // 固定背景
+  
   document.body.style.backgroundImage = `url('${backgroundImage}')`;
 }
 
