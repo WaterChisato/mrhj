@@ -1,4 +1,4 @@
-/* 🌈 导入你自己的字体 */
+/* 字体，这里默认加载的是原神字体，如果要改，字体放到fonts，名称改为MyFont */
 @font-face {
   font-family: 'MyFont';                /* 自定义字体名称 */
   src: url('fonts/MyFont.ttf') format('truetype'); /* 字体文件路径 */
